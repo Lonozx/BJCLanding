@@ -299,6 +299,7 @@ body {
 .header__title h1 {
   font-size: 4.1875em;
   color: #fff;
+  font-family: Tajawal;
 }
 
 .header__title h1 span {
@@ -311,8 +312,10 @@ body {
 
 @media (max-width: 1200px) {
   .header {
-    padding: 1.875em 0 28.75em;
-    background-image: url(../img/bg_mob.jpg);
+    /* padding: 1.875em 0 28.75em; */
+    padding: 6.875em 0 28.75em;
+
+    background-image: url(./FrameBlackJack_mob.jpg);
   }
 
   .header__elem {
@@ -356,10 +359,28 @@ body {
     width: 5.875em;
     margin-right: 0;
     display: block;
+    /* margin-top: 10em; */
   }
 
   .header__title {
-    padding-top: 1.5em;
+    /* padding-top: 1.5em; */
+    padding-top: 0;
+    /* background: #020024;
+    background: radial-gradient(
+      circle,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    ); */
+    background: #020024;
+    background: radial-gradient(
+      circle,
+      rgba(2, 0, 36, 0.47) 0%,
+      rgba(9, 9, 121, 0.53) 35%,
+      rgba(0, 212, 255, 0.5) 100%
+    );
+    border-radius: 61%;
+    padding: 30px;
   }
 
   .header__title h1 {
@@ -411,7 +432,7 @@ body {
 }
 
 .main {
-  margin-top: -15em;
+  margin-top: -23em;
   position: relative;
   padding: 12.5em 0 6em;
   background-image: url(./bg_main.png);
@@ -483,7 +504,210 @@ body {
   z-index: 1;
   width: 22.5em;
 }
+.step {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/* .main__girl {
+  background: linear-gradient(to top, #1b1a24, rgba(255, 255, 255, 0));
+} */
+.steps {
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: repeat(3, 30em);
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 10%;
+  gap: 10%;
+}
+.step {
+  align-items: center;
+  justify-content: center;
+}
+.bottom {
+  /* padding: 70px 0; */
+  padding: 9% 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("img/backg-3.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bottom:before {
+  content: "";
+  position: absolute;
+  inset-block-start: -1px;
+  inset-inline-start: 0;
+  height: 50px;
+  width: 100%;
+  display: block;
+  transition: 1s all;
 
+  z-index: 1;
+  pointer-events: none;
+}
+.bottom:after {
+  content: "";
+  position: absolute;
+  inset-block-end: -1px;
+  inset-inline-start: 0;
+  height: 50px;
+  width: 100%;
+  display: block;
+  transition: 1s all;
+  /* background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%); */
+  z-index: 1;
+  pointer-events: none;
+}
+.bottom .testimonials {
+  max-width: 730px;
+  padding: 40px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  background: radial-gradient(
+    57.62% 58.03% at 65.09% 43.97%,
+    #000c2b 0%,
+    #000c2b 100%
+  );
+  border: 2px solid #ecf5ff;
+}
+.bottom .testimonials .top {
+  display: flex;
+  align-items: center;
+}
+.bottom .testimonials .top img {
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  object-fit: contain;
+  object-position: center;
+}
+.bottom .testimonials .top img:not(:first-of-type) {
+  margin-inline-start: -50px;
+  position: relative;
+}
+.bottom .testimonials .text-info {
+  color: #fff;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+.bottom .testimonials .middle span {
+  display: inline-flex;
+  align-items: center;
+}
+.bottom .testimonials .testimonial {
+  width: 100%;
+  display: flex;
+  padding-block-start: 30px;
+}
+.bottom .testimonials .testimonial img {
+  height: 88px;
+  width: 88px;
+}
+.bottom .testimonials .testimonial .test-content {
+  padding-block-start: 15px;
+}
+.bottom {
+  color: white;
+}
+.bottom .testimonials .testimonial .test-content .test-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.bottom .testimonials .testimonial .test-content .test-title span {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.4;
+  display: inline-block;
+}
+.bottom .testimonials .testimonial .test-content p {
+  /* font-family: Montserrat, sans-serif; */
+  font-family: "Tajawal";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 130%;
+  margin: 10px 0;
+}
+.bottom .testimonials .testimonial .test-content .test-actions {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  background: linear-gradient(172deg, #ffd910 0%, #ffd910 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bottom .testimonials .testimonial .test-content .test-actions span {
+  display: inline-flex;
+  align-items: center;
+  padding-inline-end: 24px;
+}
+.bottom .testimonials span {
+  cursor: pointer;
+}
+.step h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  /* font-family: "Montserrat Semibold", sans-serif; */
+  font-family: "Montserrat Alternates", sans-serif;
+
+  line-height: 150%;
+}
+.step h5 {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  /* font-family: "Montserrat Light", sans-serif; */
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .bottom .testimonials .text-info {
+    font-size: 18px;
+  }
+  .bottom {
+    padding: 100px 10px;
+  }
+  .bottom .testimonials {
+    padding: 15px;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+    padding: 0 40px;
+  }
+  .steps {
+    grid-column-gap: 10px;
+    align-items: flex-start;
+    padding-top: 5em;
+  }
+  .step {
+    display: flex;
+    flex-direction: column;
+  }
+  .step h4 {
+    font-size: 20px;
+    line-height: 27px;
+    /* margin: 10px auto 10px;
+     */
+    margin: 2px;
+    text-align: center;
+  }
+}
 .main__steps_item:not(:last-child):before {
   content: "";
   display: block;
@@ -615,10 +839,10 @@ body {
 
 @media (max-width: 1200px) {
   .main {
-    margin-top: -6.25em;
+    /* margin-top: -6.25em; */
     position: relative;
     padding: 4.625em 0 1.4375em;
-    background-image: url(../img/bg_main_mob.png);
+    background-image: url(./bg_main_mob.png);
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -945,6 +1169,7 @@ body {
   font-size: 2.25em;
   color: #05102d;
   font-weight: 900;
+  font-family: Tajawal;
 }
 
 .btn:hover {
