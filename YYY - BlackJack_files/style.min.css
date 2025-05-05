@@ -232,11 +232,12 @@ body {
 .header {
   position: relative;
   padding: 4.375em 0 37.5em;
-  background-image: url(./FrameBlackJsack.jpg);
+  background-image: url(./bkclack.png);
   -moz-background-size: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top;
+  /* background-position: top; */
+  background-position: bottom;
 }
 
 .header__elem {
