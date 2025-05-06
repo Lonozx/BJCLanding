@@ -680,7 +680,7 @@ body {
     font-size: 18px;
   }
   .bottom {
-    padding: 100px 10px;
+    padding: 7em 10px;
   }
   .bottom .testimonials {
     padding: 15px;
@@ -694,7 +694,7 @@ body {
   .steps {
     grid-column-gap: 10px;
     align-items: flex-start;
-    padding-top: 5em;
+    padding-top: 10em;
   }
   .step {
     display: flex;
