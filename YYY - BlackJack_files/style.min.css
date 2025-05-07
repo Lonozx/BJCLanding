@@ -847,6 +847,8 @@ body {
     background-image: url(./bg_main_mob.png);
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
+    /* background-size: contain; */
+
     background-repeat: no-repeat;
     overflow: hidden;
   }
