@@ -374,13 +374,13 @@ body {
       rgba(9, 9, 121, 1) 35%,
       rgba(0, 212, 255, 1) 100%
     ); */
-    background: #020024;
+    /* background: #020024;
     background: radial-gradient(
       circle,
       rgba(2, 0, 36, 0.47) 0%,
       rgba(9, 9, 121, 0.53) 35%,
       rgba(0, 212, 255, 0.5) 100%
-    );
+    ); */
     border-radius: 61%;
     padding: 30px;
   }
@@ -682,6 +682,12 @@ body {
   }
   .bottom {
     padding: 7em 10px;
+    backdrop-filter: blur(12px);
+    background: radial-gradient(
+      57.62% 58.03% at 65.09% 43.97%,
+      #000c2b 0%,
+      #000c2b 100%
+    );
   }
   .bottom .testimonials {
     padding: 15px;
@@ -695,7 +701,7 @@ body {
   .steps {
     grid-column-gap: 10px;
     align-items: flex-start;
-    padding-top: 10em;
+    padding-top: 3em;
   }
   .step {
     display: flex;
@@ -845,9 +851,9 @@ body {
     position: relative;
     padding: 4.625em 0 1.4375em;
     background-image: url(./bg_main_mob.png);
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    /* background-size: contain; */
+    /* -moz-background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background-size: contain;
 
     background-repeat: no-repeat;
     overflow: hidden;
