@@ -314,7 +314,8 @@ body {
 @media (max-width: 1200px) {
   .header {
     /* padding: 1.875em 0 28.75em; */
-    padding: 6.875em 0 28.75em;
+    /* padding: 6.875em 0 28.75em; */
+    padding: 7.875em 0 27.75em;
 
     background-image: url(./FrameBlackJack_mob.jpg);
   }
