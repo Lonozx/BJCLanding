@@ -287,7 +287,7 @@ body {
   width: 15em;
   margin-right: 125px;
   display: block;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 @media screen and (min-width: 1300px) {
   .header__logo {
@@ -359,7 +359,7 @@ body {
   }
 
   .header__logo {
-    width: 5.875em;
+    width: 7.875em;
     margin-right: 0;
     display: block;
     /* margin-top: 10em; */
